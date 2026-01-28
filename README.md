@@ -2,6 +2,8 @@
 
 使用 AI 生成的一个 IntelliJ IDEA 插件，在状态栏显示当前光标行的 Git blame 信息。
 
+git-blame-statusbar-plugin-1.0-SNAPSHOT.zip 支持版本 233 ~ 263
+
 ## 功能特性
 
 - 实时显示光标所在行的 Git blame 信息
