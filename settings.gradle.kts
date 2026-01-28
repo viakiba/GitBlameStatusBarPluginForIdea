@@ -1,0 +1,1 @@
+rootProject.name = "git-blame-statusbar-plugin"

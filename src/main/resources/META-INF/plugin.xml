@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+    <id>com.example.git-blame-statusbar</id>
+    <name>Git Blame Status Bar</name>
+    <vendor email="support@example.com" url="https://www.example.com">Example</vendor>
+
+    <description><![CDATA[
+    在状态栏显示当前光标行的 Git blame 信息，包括提交人、提交信息和提交时间。
+    当鼠标悬停在有 Git 版本控制的文件上时，底部状态栏会显示光标所在行的详细提交信息。
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>Git4Idea</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <statusBarWidgetFactory implementation="com.example.gitblame.GitBlameStatusBarWidgetFactory"/>
+        <editorFactoryListener implementation="com.example.gitblame.GitBlameEditorListener"/>
+    </extensions>
+
+    <actions>
+        <!-- Define actions here -->
+    </actions>
+</idea-plugin>
